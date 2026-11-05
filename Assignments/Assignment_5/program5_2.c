@@ -9,7 +9,7 @@ void Checkleapyear(int iYear)
     {
         printf("invalid year");
     }
-    else if(iYear%4==0)
+    else if((iYear%400==0) || (iYear%4==0)&&(iYear%100)!=0)
     {
         printf("it is a leap year");
     }
